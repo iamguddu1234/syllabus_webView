@@ -1,0 +1,251 @@
+html {
+  /*Core color codes------global color codes #224C98 */
+  --themeColor: #207ef5;
+  /* #224C98;/*#263c63;/* #1b3d7a;#4285F4*/
+  --deepDarkThemeTextColor: #1b1e24;
+  /*#29303d;/*#132545;/*#0e1c36;*/
+  --greyTextColor: #5e5d5d;
+  --cardBorderColor: #d3d3d3;
+  --cardBorderColorLight: #e8e8e8;
+  --greenColor1: #65c394;
+  --redColor1: #ff726f;
+  --bodyBkgColor: #f2f2f2;
+}
+
+.parentDiv {
+  background-color: var(--bodyBkgColor);
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mainContainer {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background-color: white;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secoundMain {
+  display: flex;
+  flex-direction: row;
+}
+.btnBg1 {
+  margin: 16px;
+  padding: 6px;
+  border-radius: 6px;
+  width: fit-content;
+  background-color: var(--themeColor);
+  height: 20px;
+}
+.buttonTitle1 {
+  color: white;
+}
+
+.btnBg2 {
+  margin: 16px;
+  padding: 6px;
+  border-radius: 6px;
+  width: fit-content;
+  background-color: var(--bodyBkgColor);
+  height: 20px;
+}
+.buttonTitle2 {
+  color: var(--greyTextColor);
+}
+
+.firstContainer {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  width: fit-content;
+  border: 1px solid var(--cardBorderColorLight);
+}
+.topContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.backgroundImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: var(--cardBorderColorLight);
+}
+
+.icon {
+  color: var(--greyTextColor);
+}
+
+.courserNameTitle {
+  margin-left: 10px;
+  width: 110px;
+  color: var(--greyTextColor);
+}
+
+.threeDot {
+  margin-right: 10px;
+  color: var(--greyTextColor);
+}
+
+.courserName {
+  color: var(--deepDarkThemeTextColor);
+}
+
+.bottomContainer {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.courserCodeTitle {
+  margin-left: 10px;
+  width: 110px;
+  color: var(--greyTextColor);
+}
+.courserCode {
+  color: var(--deepDarkThemeTextColor);
+}
+
+.btnBg {
+  margin: 16px;
+  padding: 6px;
+  border-radius: 6px;
+  width: fit-content;
+  background-color: var(--themeColor);
+}
+
+.buttonTitle {
+  color: white;
+  font: 14px;
+}
+
+.detailContainer {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background-color: white;
+  width: auto;
+}
+.topTitleBar {
+  margin: 16px;
+  height: 30px;
+  width: auto;
+  /* background-color: var(--bodyBkgColor);
+  border-radius: 4px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstSec {
+  display: flex;
+  align-items: center;
+}
+
+.secoundSec {
+  display: flex;
+  align-items: center;
+}
+
+.NubackgroundColor {
+  height: 30px;
+  width: 30px;
+  background-color: var(--bodyBkgColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberText {
+  color: var(--deepDarkThemeTextColor);
+}
+
+.sectionMainTitle {
+  margin-left: 16px;
+}
+
+.horizontalLine {
+  width: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-bottom: 1px solid var(--cardBorderColorLight);
+  border-bottom-style: solid;
+  border-bottom-color: var(--cardBorderColorLight);
+}
+
+.sectionMainContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.leftSection {
+  display: flex;
+}
+
+.rightSection {
+  display: flex;
+}
+.sectionNumber {
+  color: var(--greyTextColor);
+}
+.sectionDetails {
+  margin-left: 16px;
+  width: 92%;
+  color: var(--greyTextColor);
+  line-height: 22px;
+}
+
+.addNewSectionButton {
+  background-color: var(--bodyBkgColor);
+  padding: 6px;
+  border-radius: 6px;
+}
+.addNewSectionText {
+  color: var(--greyTextColor);
+}
+
+.editBG {
+  margin-left: 16px;
+  height: 30px;
+  height: 30px;
+  background-color: var(--bodyBkgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.editICON {
+  padding: 6px;
+  color: var(--greyTextColor);
+}
+
+.deleteBG {
+  margin-left: 16px;
+  height: 30px;
+  height: 30px;
+  background-color: var(--bodyBkgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.deleteICON {
+  padding: 6px;
+  color: var(--greyTextColor);
+}
