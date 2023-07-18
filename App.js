@@ -1,17 +1,55 @@
 import logo from "./logo.svg";
 import classes from "./App.module.css";
 import "typeface-roboto";
+
 import {
   BsFillBookFill,
   BsFillPersonVcardFill,
   BsPencilSquare,
+  BsPersonFill,
+  BsBookHalf,
+  BsFillCameraVideoFill,
+  BsFillFileEarmarkFill,
+  BsLink45Deg,
 } from "react-icons/bs";
 
+import { BiLinkAlt } from "react-icons/bi";
+
 import { MdDelete } from "react-icons/md";
+import ReactSwitch from "react-switch";
 
 function App() {
   return (
     <div className={classes.parentDiv}>
+      <div className={classes.topNavbar}>
+        <div className={classes.btnCollections}>
+          <button className={classes.AboutBG}>
+            <BsPersonFill className={classes.abouticon} />
+            <div className={classes.AboutTitle}>About</div>
+          </button>
+
+          <button className={classes.syllabusBG}>
+            <BsBookHalf className={classes.syllabusicon} />
+            <div className={classes.syllabusTitle}>Syllabus</div>
+          </button>
+
+          <button className={classes.VideosBG}>
+            <BsFillCameraVideoFill className={classes.Videosicon} />
+            <div className={classes.VideosTitle}>Videos</div>
+          </button>
+
+          <button className={classes.FilessBG}>
+            <BsFillFileEarmarkFill className={classes.Filesicon} />
+            <div className={classes.FilesTitle}>Files</div>
+          </button>
+
+          <button className={classes.LinksBG}>
+            <BsLink45Deg className={classes.linksIcon} />
+            <div className={classes.LinksTitle}>Links</div>
+          </button>
+        </div>
+      </div>
+
       <div className={classes.mainContainer}>
         <div className={classes.firstMain}>
           <div className={classes.firstContainer}>
@@ -35,19 +73,26 @@ function App() {
             </div>
           </div>
 
-          <div className={classes.btnBg}>
+          <button className={classes.btnBg}>
             <div className={classes.buttonTitle}>Add A New Chapter</div>
-          </div>
+          </button>
         </div>
 
         <div className={classes.secoundMain}>
-          <div className={classes.btnBg1}>
+          <button className={classes.btnBg1}>
             <div className={classes.buttonTitle1}>Import Syllabus</div>
-          </div>
+          </button>
 
-          <div className={classes.btnBg2}>
+          <button className={classes.btnBg2}>
             <div className={classes.buttonTitle2}>Reset To Default</div>
-          </div>
+          </button>
+
+          <button className={classes.btnBg3}>
+            <ReactSwitch className={classes.toggleBTN} />
+            <div className={classes.buttonTitle3}>Edit Mode</div>
+          </button>
+
+          <div className={classes.toggleBtnContainer}></div>
         </div>
       </div>
 
@@ -64,16 +109,18 @@ function App() {
           </div>
 
           <div className={classes.secoundSec}>
-            <div className={classes.addNewSectionButton}>
+            <button className={classes.addNewSectionButton}>
               <div className={classes.addNewSectionText}>Add New Section</div>
-            </div>
+            </button>
 
-            <div className={classes.editBG}>
-              <BsPencilSquare className={classes.editICON} />
-            </div>
+            <div className={classes.horiIconDiv}>
+              <button className={classes.editBG}>
+                <BsPencilSquare className={classes.editICON} />
+              </button>
 
-            <div className={classes.deleteBG}>
-              <MdDelete className={classes.deleteICON} />
+              <button className={classes.deleteBG}>
+                <MdDelete className={classes.deleteICON} />
+              </button>
             </div>
           </div>
         </div>
@@ -96,13 +143,13 @@ function App() {
           </div>
 
           <div className={classes.rightSection}>
-            <div className={classes.editBG}>
-              <BsPencilSquare className={classes.editICON} />
-            </div>
+            <button className={classes.reditBG}>
+              <BsPencilSquare className={classes.reditICON} />
+            </button>
 
-            <div className={classes.deleteBG}>
-              <MdDelete className={classes.deleteICON} />
-            </div>
+            <button className={classes.rdeleteBG}>
+              <MdDelete className={classes.rdeleteICON} />
+            </button>
           </div>
         </div>
 
@@ -122,13 +169,13 @@ function App() {
           </div>
 
           <div className={classes.rightSection}>
-            <div className={classes.editBG}>
-              <BsPencilSquare className={classes.editICON} />
-            </div>
+            <button className={classes.reditBG}>
+              <BsPencilSquare className={classes.reditICON} />
+            </button>
 
-            <div className={classes.deleteBG}>
-              <MdDelete className={classes.deleteICON} />
-            </div>
+            <button className={classes.rdeleteBG}>
+              <MdDelete className={classes.rdeleteICON} />
+            </button>
           </div>
         </div>
 
@@ -148,13 +195,13 @@ function App() {
           </div>
 
           <div className={classes.rightSection}>
-            <div className={classes.editBG}>
-              <BsPencilSquare className={classes.editICON} />
-            </div>
+            <button className={classes.reditBG}>
+              <BsPencilSquare className={classes.reditICON} />
+            </button>
 
-            <div className={classes.deleteBG}>
-              <MdDelete className={classes.deleteICON} />
-            </div>
+            <button className={classes.rdeleteBG}>
+              <MdDelete className={classes.rdeleteICON} />
+            </button>
           </div>
         </div>
       </div>
